@@ -1,0 +1,71 @@
+
+/* styling of nav bar */
+ul {    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #40424e;
+    border-radius: 10vw;
+    display: flex;
+    justify-content: space-evenly;
+    column-width: 100%;
+    align-items: center;
+    border: 3px black solid;
+}
+/* separation lines between pages */
+li :not(#portfolio){ 
+    border-right: 1px black solid;
+}
+/* nav text setup*/
+li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 15px 15vw;
+    text-decoration: none;
+    
+}
+/* hover effect for navigation*/
+li a:hover {
+    background-color: #7c7f9795;
+    
+}
+/* setup of header */
+h1 {
+    background-color: black;
+    color: azure;
+    border: 10px #40424e solid;
+    padding-left: 10px;
+    border-radius: 10vw;
+}
+/*quote layout*/
+#quote {
+    position: relative;
+    margin-bottom: 5px;
+    margin-top: -15px;
+    background-color: black;
+    border: 10px #40424e solid;
+  text-align: center;
+  font-family: cursive;
+border-radius: 10vw;
+}
+
+/*quote hover effect*/
+
+#quote:hover {
+    color: #000000;
+    
+        background-color: #7c7f9795;
+     }
+
+/*body background color gradient*/ 
+body {
+            background: linear-gradient(
+                to right,
+                    #000000 0%,
+                    #000000 50%,
+                    #40424e 50%,
+                    #40424e 100%
+            )
+        }
