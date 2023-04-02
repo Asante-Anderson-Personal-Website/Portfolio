@@ -78,13 +78,12 @@ body {
             width: 50%;
             text-align: left;
             background-color: #40424e;
-            padding: 5px;
+           padding-left: 5px;
             margin-top: 6px;
         }
         #mission1 {
             color: #40424e;
-            transform: translateX(48vw);
-                width: 50vw;
+                width: 50%;
                 text-align: right;
                 background-color: #000000;
                 padding: 5px;
@@ -135,10 +134,70 @@ body {
                 text-decoration: line-through #40424e;
                 transform: translateX(-100vw );
         }
-        /* paragraph setups*/
+        /* paragraph setups in about section*/
         .aboutP {
             background-color: #40424e;
             padding: 5px;
             text-indent: 10px;
         }
 
+        /*parameters for picture of me*/
+        .pic {
+            height: 135px;
+            align-self: flex-end;
+            border: #000000 2px solid;
+            border-bottom: 0px solid #000000;
+            margin-top: 1%;
+        }
+        /*home page, aligning text and images in sections using flex*/
+        #home1 {
+            width: 100vw;
+            display: flex;
+        }
+        #home2 {
+            width: 100vw;
+            display: flex;
+            justify-content: space-between;
+            justify-content: flex-end;
+        }
+        /*aligning images and setting width in about section*/
+        #aboutPics {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .hobby {
+            width: 25vw;
+        }
+        /*set up for projects using wrap*/
+        .project {
+            background-color: #40424e;
+            display: flex;
+            justify-content: space-between;
+            margin: 1px;
+           flex-wrap: wrap;
+        }
+        /*project pictures alignment and size*/
+        .projectPics {
+                
+                height: 135px;
+                align-self: center;
+                border: #000000 2px solid;
+                border-bottom: 0px solid #000000;
+                margin-top: 1%;
+        }
+        /*grow and rotate on hover effect added to pictures*/
+        .projectPics:hover {
+            transform: scale(1.06) rotate(5deg);
+        }
+        /*Projects heading set up*/
+        #PH {
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        a {
+            color: #000000;
+        }
+
+       
