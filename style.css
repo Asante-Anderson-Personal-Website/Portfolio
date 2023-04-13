@@ -6,15 +6,16 @@ ul {
     padding: 0;
     overflow: hidden;
     background: linear-gradient(to right,
-                #648820 0vw,
-                #8a9a2c 66vw,
-                #eece2e 100vw);
+                #38651f 0vw,
+                #4c671c 66vw,
+                #798725 100vw);
     border-radius: 10vw;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     column-width: 100%;
     align-items: center;
     border: 3px #40424e solid;
+    text-align: center;
 }
 /* separation lines between pages */
 li :not(#portfolio){ 
@@ -22,29 +23,30 @@ li :not(#portfolio){
 }
 /* nav text setup*/
 li a {
-    display: block;
+    display: flex;
     color: #40424e;
     text-align: center;
     padding: 15px 15vw;
     text-decoration: none;
+    text-align: center;
     
     
 }
 /* hover effect for navigation*/
 li a:hover {
-    background-color: #000000;
+    background-color: #648820;
     transform: scale(1.2);
-    color: #8a9a2c;
+    color: #000000;
 }
 /* setup of header */
 h1 {
     background: linear-gradient(to right,
-                #648820 0vw,
-                #8a9a2c 66vw,
-                #eece2e 100vw);
+                    #38651f 0vw,
+                    #4c671c 66vw,
+                    #798725 100vw);
     color: #40424e;
     border: 10px #40424e solid;
-    padding-left: 10px;
+    
     border-radius: 10vw;
 }
 /*quote layout*/
@@ -72,45 +74,39 @@ h1 {
 
 /*body background color gradient*/ 
 body {
-            background: linear-gradient(
-                to right,
-                    #4c671c 0vw,
-                    #738124 50vw,
-                    #adb727 100vw
-                    
-            )
+    align-content: center;
+    width: 100%;
+            background-color: #4c671c;
         
         }
-body {
-    margin-right: 10px;
-}
+
 
 /* mission statement styles */
         #mission {
             color: #000000;
             width: 50%;
             text-align: right;
-            background-color: #64882066;   
+            background-color: #4c671c;   
            padding: 5px;
             margin-top: 6px;
             border: 5px solid;
             border-image-slice: 1;
             border-width: 3px;
-            border-image-source: linear-gradient(to left, #40424e, #6488207d );
-           box-shadow: 0 30px 40px rgba(206, 20, 20, 0.1);
+            border-image-source: linear-gradient(to left, #40424e, #4c671c97 );
+           box-shadow: 0 30px 40px #00000080;
         }
         #mission1 {
             color: #000000;
                 width: 50%;
                 text-align: left;
-                background-color: #eece2e7f;
+                background-color: #4c671c;
                 padding: 5px;
                 margin-top: 0px;
                 border: 5px solid;
                     border-image-slice: 1;
                     border-width: 3px;
-                    border-image-source: linear-gradient(to right, #40424e, #eece2e62);
-                    box-shadow: 0 30px 40px rgba(206, 20, 20, 0.1);
+                    border-image-source: linear-gradient(to right, #40424e, #4c671c97);
+                    box-shadow: 0 30px 40px #00000080;
         }
 /*slide in animations for about headers*/
         @keyframes slideInRight {
@@ -136,12 +132,13 @@ body {
         #music {
             animation: slideInRight 2s ease-in;
             background: linear-gradient(to right,
-                        #4c671c 0vw,
-                        #738124 66vw,
-                        #adb727 100vw);
+                        #4c671c 0%,
+                        #738124 66%,
+                        #adb727 100%);
             padding: 5px;
             text-align: center;
-            text-decoration: line-through #40424e;
+            text-decoration: line-through #000000;
+            box-shadow: 0 30px 40px #00000080;
         }
 
         #stocks {
@@ -152,8 +149,9 @@ body {
                             #adb727 100vw);
                 padding: 5px;
                 text-align: center;
-                text-decoration: line-through #40424e;
+                text-decoration: line-through #000000;
                 transform: translateX(100vw);
+                box-shadow: 0 30px 40px #00000080;
         }
         #dance {
             animation: slideInRight 2s ease-in 1s 1 normal forwards;
@@ -165,14 +163,15 @@ body {
                 text-align: center;
                 text-decoration: line-through #000000;
                 transform: translateX(-100vw );
+                box-shadow: 0 30px 40px #00000080;
         }
         /* paragraph setups in about section*/
         .aboutP {
             border: #40424e solid 3px;
             background: linear-gradient(to right,
-                        #648820 0vw,
-                        #8a9a2c 66vw,
-                        #eece2e 100vw);
+                        #38651f 0vw,
+                        #4c671c 66vw,
+                        #798725 100vw);
             padding: 5px;
             text-indent: 10px;
             
@@ -236,6 +235,11 @@ body {
         #PH {
             display: flex;
             justify-content: center;
+            background: linear-gradient(to right,
+                        #648820 0vw,
+                        #8a9a2c 66vw,
+                        #eece2e 100vw);
+                        color: #40424e;
             
         }
 
@@ -272,4 +276,24 @@ body {
         #submit:hover {
             transform: scale(1.05);
         }
+
+      @media screen and (max-width: 480px) {
+        h1 {
+            width: 100vw;
+        }
+        header {
+            display: flex;
+            text-align: center;
+        }
+        body {
+            margin: 20px;
+        }
+        #indexhtml {
+            transform: translateX(20%);
+        }
+        #portfolio {
+            transform: translateX(-20%);
+        }
+
+      }
        
